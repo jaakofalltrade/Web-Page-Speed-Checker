@@ -8,7 +8,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
           type: "POST",
-          url: "../php/checker.php",
+          url: "php/checker.php",
           data: {
             file: $("#file").val()
            
@@ -62,7 +62,7 @@ $(document).ready(function() {
               e.preventDefault();
               $.ajax({
                 type: "POST",
-                url: "../php/checker.php",
+                url: "php/checker.php",
                 data: {
                   files: $("#file").val()
                  
