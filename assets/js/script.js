@@ -8,7 +8,7 @@ $(document).ready(function() {
         e.preventDefault();
         $.ajax({
           type: "POST",
-          url: "php/checker.php",
+          url: "../php/checker.php",
           data: {
             file: $("#file").val()
            
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
               else{
                  document.getElementById("result").style.color = "red";
-                 document.getElementById('result').innerHTML = " Your Web page loads more than 5 seconds, which is bad. click <a href='http://localhost/Web-Page-Speed-Checker/guide.html'>here</a> to make your web page faster";
+                 document.getElementById('result').innerHTML = " Your Web page loads more than 5 seconds, which is bad. click <a href='../../guide.html'>here</a> to make your web page faster";
               }
 
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
               e.preventDefault();
               $.ajax({
                 type: "POST",
-                url: "php/checker.php",
+                url: "../php/checker.php",
                 data: {
                   files: $("#file").val()
                  
@@ -85,7 +85,7 @@ $(document).ready(function() {
              // return error if Web page containes error
              $("#check").text('Check Speed');
              document.getElementById("result").style.color = "red";
-             document.getElementById('result').innerHTML = "Opss... Something's wrong with your Web page! details <a href='http://localhost/Web-Page-Speed-Checker/guide.html#wrong'> here </a>";
+             document.getElementById('result').innerHTML = "Opss... Something's wrong with your Web page! details <a href='../../guide.html#wrong'> here </a>";
           }
         });
   }
